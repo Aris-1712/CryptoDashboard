@@ -9,9 +9,9 @@ import MarketList from "./UI/MarketList/MarketList";
 
 function App() {
   return (
-    // style={{display:"flex",flexDirection:"row",width:"100%",justifyContent:"space-between",height:"100%",flexWrap:"wrap"}}
+    
     <div className="mainAppContainer" >
-{/* style={{display:"flex",flexDirection:"column",justifyContent:"space-between"}} */}
+
       <div className="mainContainer" >
       <div className="innerContainer" >
         <Graph></Graph>
@@ -20,13 +20,13 @@ function App() {
         <Tabs></Tabs>
       </div>
       </div>
-      {/* style={{display:"flex",justifyContent:"space-between"}} */}
+
       <div className="mainContainer3" >
-      {/* style={{backgroundColor: "#171b20"}} */}
+
       <div className="innerContainer3" >
         <OrderBook></OrderBook>
       </div>
-      {/* style={{backgroundColor: "#171b20"}} */}
+    
       <div className="innerContainer4" >
         <BuySell></BuySell>
       </div>

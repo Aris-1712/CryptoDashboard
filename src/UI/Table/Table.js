@@ -27,10 +27,7 @@ const useStyles = makeStyles({
   
   const rows = [
     createData('ETH (Ethereum)', '0.18 ETH','10,000 USDT','1,800 USDT','0.0000 USDT','-100.00%','-1,800.0000 USDT','0.01 ETH'),
-    // createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-    // createData('Eclair', 262, 16.0, 24, 6.0),
-    // createData('Cupcake', 305, 3.7, 67, 4.3),
-    // createData('Gingerbread', 356, 16.0, 49, 3.9),
+
   ];
   
    const TableTab=(props)=> {
@@ -58,7 +55,7 @@ const useStyles = makeStyles({
                 <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} component="th" scope="row">
                   {row.name}
                 </TableCell>
-                {/* <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">{row.name}</TableCell> */}
+                
                 <TableCell className={classes.headCell} align="right">{row.Balance}</TableCell>
                 <TableCell className={classes.headCell} align="right">{row.Average}</TableCell>
                 <TableCell className={classes.headCell} align="right">{row.Buy}</TableCell>

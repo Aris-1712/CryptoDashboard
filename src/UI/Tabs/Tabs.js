@@ -29,15 +29,7 @@ const TabsReact = (props) => {
         </div>
         <br></br>
         <div className="panelBottomContainer"
-          // style={{
-          //   marginLeft: 20,
-          //   marginRight: 20,
-          //   backgroundColor: "#0A0A0A",
-          //   display: "flex",
-          //   flexDirection: "row",
-          //   alignItems: "center",
-          //   justifyContent: "space-evenly",
-          // }}
+       
         >
           <div className="panelBottom">
             <StarRateIcon /> <label>0/1</label>

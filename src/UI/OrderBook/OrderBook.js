@@ -15,19 +15,17 @@ import './OrderBook.css'
 const OrderBook = (props) => {
   const useStyles = makeStyles({
     table: {
-    //   height:300,
+
         border: "solid 1px #21252a",
         maxWidth:"100%",
       backgroundColor: "#171b20",
       color: "#ADADAD",
     },
     root: {
-        // padding:10,
+  
         height:350,
         backgroundColor: "#171b20",
-    //   borderleft: "solid 1px #21252a",
-    //   borderTop:"solid 1px #21252a",
-    //   borderBottom:"solid 1px #21252a",
+
     },
     OrderBooktableCellP:{
       color: "#0080fe",borderBottom:"solid 1px #21252a"
@@ -51,15 +49,11 @@ const OrderBook = (props) => {
     createData(null, null, <span className="PriceN">12060</span>, "0.00005", null),
     createData(null, null, <span className="PriceN">12060</span>, "0.00005", null),
     createData(null, null, <span className="PriceN">12060</span>, "0.00005", null),
-    // createData(null, "0.00005", 12060, null, null),
-    // createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-    // createData('Eclair', 262, 16.0, 24, 6.0),
-    // createData('Cupcake', 305, 3.7, 67, 4.3),
-    // createData('Gingerbread', 356, 16.0, 49, 3.9),
+  
   ];
   const classes = useStyles();
   return (
-    // style={{marginLeft:10,marginRight:10}}
+
       <div className="OrderBookContainer" >
           <h4 style={{color:"white"}}>Order Book</h4>
     <TableContainer className={classes.root} component={Paper}>

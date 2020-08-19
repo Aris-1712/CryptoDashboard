@@ -28,10 +28,7 @@ const useStyles = makeStyles({
   const rows = [
     createData('BTC/USDT', '11,800',<span style={{color:"#f37668"}}>+3.15%</span>,<span><StarRateIcon></StarRateIcon></span>),
     createData('BTC/USDT', '11,800',<span style={{color:"#f37668"}}>+3.15%</span>,<span><StarRateIcon></StarRateIcon></span>),
-    // createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-    // createData('Eclair', 262, 16.0, 24, 6.0),
-    // createData('Cupcake', 305, 3.7, 67, 4.3),
-    // createData('Gingerbread', 356, 16.0, 49, 3.9),
+
   ];
   
    const MarketTable=(props)=> {
@@ -46,11 +43,7 @@ const useStyles = makeStyles({
               <TableCell className={classes.tablcellHeadStyle}  align="right">Price</TableCell>
               <TableCell className={classes.tablcellHeadStyle}  align="right">Change</TableCell>
               <TableCell className={classes.tablcellHeadStyle} align="right"></TableCell>
-              {/* <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">Est. Value</TableCell>
-              <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">Profit/Loss(%)</TableCell>
-              <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">Profit/Loss</TableCell>
-              <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">Available Balance</TableCell>
-              <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right"><StarRateIcon></StarRateIcon></TableCell> */}
+          
             </TableRow>
           </TableHead>
           <TableBody>
@@ -59,15 +52,11 @@ const useStyles = makeStyles({
                 <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} component="th" scope="row">
                   {row.pair}
                 </TableCell>
-                {/* <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">{row.name}</TableCell> */}
+               
                 <TableCell  className={classes.tablcellHeadStyle} align="right">{row.price}</TableCell>
                 <TableCell  className={classes.tablcellHeadStyle} align="right">{row.change}</TableCell>
                 <TableCell  className={classes.tablcellHeadStyle} align="right">{row.icon}</TableCell>
-                {/* <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">{row.Est}</TableCell>
-                <TableCell style={{color:"#ADADAD",borderColor:"#171b20",color:"#f36876"}} align="right">{row.ProfitPer}</TableCell>
-                <TableCell style={{color:"#ADADAD",borderColor:"#171b20",color:"#f36876"}} align="right">{row.Profit}</TableCell>
-                <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">{row.Available}</TableCell>
-                <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right"><StarRateIcon></StarRateIcon></TableCell> */}
+        
               </TableRow>
             ))}
           </TableBody>
