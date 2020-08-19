@@ -1,0 +1,16 @@
+.OrderBookContainer{
+margin-left: 10px;
+margin-right: 10px;
+}
+.ordericon{
+    display: flex;
+    justify-content: space-evenly;
+}
+.PriceP{
+    color:#0080fe;
+    font-weight: bold;
+}
+.PriceN{
+    color:#f36876;
+    font-weight: bold;
+}

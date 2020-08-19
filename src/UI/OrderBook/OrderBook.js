@@ -11,6 +11,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import AddIcon from '@material-ui/icons/Add';
 import RemoveIcon from '@material-ui/icons/Remove';
 import RadioButtonCheckedIcon from '@material-ui/icons/RadioButtonChecked';
+import './OrderBook.css'
 const OrderBook = (props) => {
   const useStyles = makeStyles({
     table: {
@@ -28,19 +29,28 @@ const OrderBook = (props) => {
     //   borderTop:"solid 1px #21252a",
     //   borderBottom:"solid 1px #21252a",
     },
+    OrderBooktableCellP:{
+      color: "#0080fe",borderBottom:"solid 1px #21252a"
+    },
+    OrderBooktableCellN:{
+      color: "#f36876",borderBottom:"solid 1px #21252a"
+    },
+    OrderTableRowCell:{
+      borderColor:"transparent",borderRight:"solid 1px #21252a" ,color: "#ADADAD"
+    }
   });
   function createData(sell, size, price, size1, buy1) {
     return { sell, size, price, size1, buy1 };
   }
   const rows = [
-    createData(null, "0.00005", 12060, null, null),
-    createData(null, "0.00005", 12060, null, null),
-    createData(null, "0.00005", 12060, null, null),
-    createData(null, "0.00005", 12060, null, null),
-    createData(null, null, 12060, "0.00005", null),
-    createData(null, null, 12060, "0.00005", null),
-    createData(null, null, 12060, "0.00005", null),
-    createData(null, null, 12060, "0.00005", null),
+    createData(null, "0.00005", <span className="PriceP" >12060</span>, null, null),
+    createData(null, "0.00005", <span className="PriceP">12060</span>, null, null),
+    createData(null, "0.00005", <span className="PriceP">12060</span>, null, null),
+    createData(null, "0.00005", <span className="PriceP">12060</span>, null, null),
+    createData(null, null, <span className="PriceN">12060</span>, "0.00005", null),
+    createData(null, null, <span className="PriceN">12060</span>, "0.00005", null),
+    createData(null, null, <span className="PriceN">12060</span>, "0.00005", null),
+    createData(null, null, <span className="PriceN">12060</span>, "0.00005", null),
     // createData(null, "0.00005", 12060, null, null),
     // createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
     // createData('Eclair', 262, 16.0, 24, 6.0),
@@ -49,23 +59,24 @@ const OrderBook = (props) => {
   ];
   const classes = useStyles();
   return (
-      <div style={{marginLeft:10,marginRight:10}}>
+    // style={{marginLeft:10,marginRight:10}}
+      <div className="OrderBookContainer" >
           <h4 style={{color:"white"}}>Order Book</h4>
     <TableContainer className={classes.root} component={Paper}>
       <Table className={classes.table} aria-label="simple table">
         <TableHead >
           <TableRow>
-            <TableCell style={{ color: "#0080fe",borderBottom:"solid 1px #21252a",borderleft: "solid 1px #21252a", }}>Sell</TableCell>
-            <TableCell style={{ color: "#0080fe",borderBottom:"solid 1px #21252a" }} align="right">
+            <TableCell className={classes.OrderBooktableCellP} style={{ borderleft: "solid 1px #21252a", }}>Sell</TableCell>
+            <TableCell className={classes.OrderBooktableCellP} align="right">
               Size
             </TableCell>
-            <TableCell style={{ color: "#ADADAD",borderBottom:"solid 1px #21252a" }} align="right">
+            <TableCell className={classes.OrderBooktableCellP}  style={{ color: "#ADADAD" }} align="right">
               Price
             </TableCell>
-            <TableCell style={{ color: "#f36876",borderBottom:"solid 1px #21252a" }} align="right">
+            <TableCell  className={classes.OrderBooktableCellN}  align="right">
               Size
             </TableCell>
-            <TableCell style={{ color: "#f36876" ,borderBottom:"solid 1px #21252a"}} align="right">
+            <TableCell className={classes.OrderBooktableCellN} align="right">
               Buy
             </TableCell>
           </TableRow>
@@ -75,13 +86,13 @@ const OrderBook = (props) => {
           
           {console.log(row)
               return(
-            <TableRow style={{borderColor:"",borderRight:"solid 1px #21252a" }}  key={row.sell}>
-              <TableCell style={{borderColor:"transparent",borderRight:"solid 1px #21252a", color: "#0080fe" }} component="th" scope="row">
+            <TableRow   key={row.sell}>
+              <TableCell className={classes.OrderTableRowCell} component="th" scope="row">
                 {row.sell}
               </TableCell>
-              <TableCell style={{borderColor:"transparent",borderRight:"solid 1px #21252a" ,color: "#0080fe" }} align="right">{row.size}</TableCell>
-              <TableCell style={{borderColor:"transparent",borderRight:"solid 1px #21252a",color: "#ADADAD" }} align="right">{row.price}</TableCell>
-              <TableCell style={{borderColor:"transparent",borderRight:"solid 1px #21252a",color: "#f36876" }} align="right">{row.size1}</TableCell>
+              <TableCell className={classes.OrderTableRowCell} align="right">{row.size}</TableCell>
+              <TableCell className={classes.OrderTableRowCell} style={{color: "#ADADAD" }} align="right">{row.price}</TableCell>
+              <TableCell className={classes.OrderTableRowCell}  align="right">{row.size1}</TableCell>
               <TableCell style={{borderColor:"transparent",color: "#f36876" }} align="right">{row.buy1}</TableCell>
             </TableRow>
           )})}
@@ -93,7 +104,7 @@ const OrderBook = (props) => {
       
     </TableContainer>
     <br></br>
-    <div style={{display:"flex",justifyContent:"space-evenly"}}>
+    <div className="ordericon" >
     <CloseIcon style={{color:"#0080fe"}}></CloseIcon>
     <AddIcon style={{color:"#0080fe"}}></AddIcon>
     <RadioButtonCheckedIcon style={{color:"#0080fe"}}></RadioButtonCheckedIcon>
