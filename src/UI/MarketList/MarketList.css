@@ -1,0 +1,9 @@
+.MarketListContainer{
+    justify-content: space-between;
+    /* height: 100%; */
+ 
+}
+
+@media only screen and (max-width: 1432px) {
+   
+}

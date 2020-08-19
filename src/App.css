@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+.mainAppContainer{
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  height: 100%;
+  flex-wrap: wrap;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.innerContainer{
+  height: 500px;
+  background-color:#171b20 ;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.innerContainer3{
+  height: 500px;
+  background-color:#171b20 ;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.innerContainer2{
+  height: 430px;
+  margin-bottom: 20px;
+  background-color:#171b20 ;
+}
+.innerContainer4{
+  height: 430px;
+  margin-bottom: 20px;
+  background-color:#171b20 ;
+}
+.mainContainer{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  height: 970px;
+  width: 49%;
+}
+.mainContainer3{
+  height: 970px;
+  width:26% ;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+.mainContainer2{
+  height: 950px;
+  width:22%;
+  background-color:#171b20 ;
+  /* margin-bottom: 20px; */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 1432px) {
+  .mainContainer {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .mainContainer3 {
+    width: 100%;
+    flex-direction: row;
+    height: 520px;
+  }
+  .innerContainer3{
+    height: 500px;
+    width: 48%;
+  }
+  .innerContainer4{
+    height: 500px;
+    width: 48%;
+  }
+  .mainContainer2{
+    width: 100%;
+    height: fit-content;
+  }
+}
+@media only screen and (max-width: 782px) {
+  .mainContainer3{
+    height: 1040px;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .innerContainer3{
+    height: 500px;
+    width: 100%;
+  }
+  .innerContainer4{
+    height: 500px;
+    width: 100%;
+  }
+  .mainContainer2{
+    width: 100%;
   }
 }

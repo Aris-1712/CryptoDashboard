@@ -1,0 +1,16 @@
+.selecedtab{
+    border-color: #0A0A0A;
+    background-color: #171b20;
+    color:#0080fe
+}
+.tablist{
+    border-bottom: 1px solid #141414;
+    background-color: #27272B;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+.panel{
+    background-color: #171b20;
+    
+}

@@ -1,24 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Graph from "./UI/Graph/Graph";
+import Tabs from "../src/UI/Tabs/Tabs";
+import OrderBook from "./UI/OrderBook/OrderBook";
+import BuySell from "./UI/Purchase/BuySell";
+import MarketList from "./UI/MarketList/MarketList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // style={{display:"flex",flexDirection:"row",width:"100%",justifyContent:"space-between",height:"100%",flexWrap:"wrap"}}
+    <div className="mainAppContainer" >
+{/* style={{display:"flex",flexDirection:"column",justifyContent:"space-between"}} */}
+      <div className="mainContainer" >
+      <div className="innerContainer" >
+        <Graph></Graph>
+      </div>
+      <div className="innerContainer2" >
+        <Tabs></Tabs>
+      </div>
+      </div>
+      {/* style={{display:"flex",justifyContent:"space-between"}} */}
+      <div className="mainContainer3" >
+      {/* style={{backgroundColor: "#171b20"}} */}
+      <div className="innerContainer3" >
+        <OrderBook></OrderBook>
+      </div>
+      {/* style={{backgroundColor: "#171b20"}} */}
+      <div className="innerContainer4" >
+        <BuySell></BuySell>
+      </div>
+      </div>
+      <div className="mainContainer2" >
+      <MarketList></MarketList>
+      </div>
+
     </div>
   );
 }
