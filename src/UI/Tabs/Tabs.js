@@ -28,18 +28,18 @@ const TabsReact = (props) => {
           <TableTab></TableTab>
         </div>
         <br></br>
-        <div
-          style={{
-            marginLeft: 20,
-            marginRight: 20,
-            backgroundColor: "#0A0A0A",
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "space-evenly",
-          }}
+        <div className="panelBottomContainer"
+          // style={{
+          //   marginLeft: 20,
+          //   marginRight: 20,
+          //   backgroundColor: "#0A0A0A",
+          //   display: "flex",
+          //   flexDirection: "row",
+          //   alignItems: "center",
+          //   justifyContent: "space-evenly",
+          // }}
         >
-          <div style={{ display: "flex", alignItems: "center", padding: 10 ,flexWrap:"wrap"}}>
+          <div className="panelBottom">
             <StarRateIcon /> <label>0/1</label>
           </div>
           <label>Total Balance: 0 USDT</label>

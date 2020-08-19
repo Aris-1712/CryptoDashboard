@@ -1,0 +1,17 @@
+.labelContainerBitCoin{
+    display: flex;
+    flex-direction: row;
+    color: #ADADAD;
+}
+.labelStyleBitCoin{
+    width:50%
+}
+.imgContainer{
+    display: flex;
+    align-items: center;
+}
+.imgLabel{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}

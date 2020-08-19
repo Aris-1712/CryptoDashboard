@@ -4,43 +4,47 @@ import "react-tabs/style/react-tabs.css";
 import Button from "@material-ui/core/Button";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
 import Slider from "@material-ui/core/Slider";
+import './BuySell.css'
 const BuySell = (props) => (
   <Tabs
     selectedTabClassName="selecedtab"
     style={{ color: "#ADADAD", backgroundColor: "#171b20",height:"100%" }}
   >
     <TabList className="tablist">
-      <Tab style={{ width: "43%" }}>Title 1</Tab>
-      <Tab style={{ width: "43%" }}>Title 2</Tab>
+      <Tab style={{ width: "43%",textAlign:"center" }}>Buy</Tab>
+      <Tab style={{ width: "43%",textAlign:"center"}}>Sell</Tab>
     </TabList>
 
     <TabPanel >
-      <div
-        style={{
-          marginLeft: 10,
-          marginRight: 10,
-          display: "flex",
-          flexDirection: "column",
-          justifyContent:"space-between",
-        }}
+      <div className="PanelBuySellContainer"
+        // style={{
+        //   marginLeft: 10,
+        //   marginRight: 10,
+        //   display: "flex",
+        //   flexDirection: "column",
+        //   justifyContent:"space-between",
+        // }}
       >
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            alignItems: "center",
-            marginBottom:20
-          }}
+        <div className="PanelBuySellContent"
+          // style={{
+          //   display: "flex",
+          //   flexDirection: "row",
+          //   justifyContent: "space-between",
+          //   alignItems: "center",
+          //   marginBottom:20
+          // }}
         >
           <label>Price</label>
           <div>
-            <Button color="primary">STOP</Button>
+            {/* <Button color="primary">STOP</Button> */}
+            <button style={{border:"solid 1px #ADADAD",backgroundColor:"black",color:'#ADADAD',padding:5,borderRadius:2,marginRight:10 }}>STOP</button>
             <ButtonGroup
               variant="contained"
               color="primary"
               aria-label="contained primary button group"
             >
+               {/* <button style={{border:"solid 1px #ADADAD",backgroundColor:"black",color:'#ADADAD',padding:5,borderRadius:2,marginRight:10 }}>STOP</button> */}
+               
               <Button>LIMIT</Button>
               <Button>MARKET</Button>
             </ButtonGroup>
@@ -61,18 +65,18 @@ const BuySell = (props) => (
             11,500{" "}
           </span>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            alignItems: "center",
-            marginBottom:20
-          }}
+        <div className="PanelBuySellContent"
+          // style={{
+          //   display: "flex",
+          //   flexDirection: "row",
+          //   justifyContent: "space-between",
+          //   alignItems: "center",
+          //   marginBottom:20
+          // }}
         >
           <label>Size</label>
         <Slider
-        style={{width:"50%"}}
+        style={{width:"50%",color:"#ADADAD"}}
           defaultValue={30}
           // getAriaValueText={valuetext}
           aria-labelledby="discrete-slider"
@@ -97,41 +101,43 @@ const BuySell = (props) => (
             Not enough balance{" "}
           </span>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            alignItems: "center",
-            marginBottom:20
-          }}
+        <div className="PanelBuySellContent"
+          // style={{
+          //   display: "flex",
+          //   flexDirection: "row",
+          //   justifyContent: "space-between",
+          //   alignItems: "center",
+          //   marginBottom:20
+          // }}
         >
           <label>Transfer (OUT)</label>
           <label>0 USDT</label>
           </div>
-          <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            alignItems: "center",marginBottom:20
-          }}
+          <div className="PanelBuySellContent"
+          // style={{
+          //   display: "flex",
+          //   flexDirection: "row",
+          //   justifyContent: "space-between",
+          //   alignItems: "center",marginBottom:20
+          // }}
         >
           <label>Receive (IN)</label>
           <label>0 BTC</label>
           </div>
-          <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            alignItems: "center",marginBottom:20
-          }}
+          <div className="PanelBuySellContent"
+          // style={{
+          //   display: "flex",
+          //   flexDirection: "row",
+          //   justifyContent: "space-between",
+          //   alignItems: "center",marginBottom:20
+          // }}
         >
           <label>Commision (0.1%)</label>
           <label>0 BTC</label>
           </div>
-          <button style={{backgroundColor:"#003264",width:"100%",padding:5,marginTop:5}}>BUY</button>
+          <button className="PanelBuyButton"
+          //  style={{backgroundColor:"#003264",width:"100%",padding:5,marginTop:5}}
+           >BUY</button>
       </div>
     </TabPanel>
     <TabPanel>

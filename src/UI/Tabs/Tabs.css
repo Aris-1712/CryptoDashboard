@@ -14,3 +14,18 @@
     background-color: #171b20;
     
 }
+.panelBottomContainer{
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color:#0A0A0A ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.panelBottom{
+    display: flex;
+    align-items: center;
+    padding:10px;
+    flex-wrap: wrap;
+}

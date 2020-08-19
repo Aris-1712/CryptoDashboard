@@ -22,4 +22,17 @@
   .react-select-container{
       background-color: #171b20;
   }
-  
+  .chartDetailContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .LabelStyle{
+    font-weight: bold;
+    color:white
+  }
+  .labelValueStyle{
+    color:#0080fe;
+    font-weight: bold;
+  }

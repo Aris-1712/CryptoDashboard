@@ -1,8 +1,33 @@
 .MarketListContainer{
     justify-content: space-between;
-    /* height: 100%; */
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
  
 }
+.inputHolder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inputStyle{
+    padding: 10px;
+    background-color:#0A0A0A ;
+    border: solid 1px #ADADAD;
+}
+.selectStyleMarketList{
+    background-color:#0A0A0A ;
+    color: white;
+    width:20%;
+    padding:10px
+}
+
+
+
+
 
 @media only screen and (max-width: 1432px) {
    

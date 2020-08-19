@@ -13,9 +13,12 @@ const useStyles = makeStyles({
       minWidth: 650,
       backgroundColor:"#171b20",
       color:'#ADADAD',
-      borderColor:'yellow',
+      // borderColor:'yellow',
       overflowX:"hidden"
     },
+    headCell:{
+      color:"#ADADAD",borderColor:"#171b20"
+    }
   });
   
   function createData(name, Balance, Average, Buy, Est,ProfitPer,Profit,Available) {
@@ -34,19 +37,19 @@ const useStyles = makeStyles({
     const classes = useStyles();
   
     return (
-      <TableContainer style={{backgroundColor:"#171b20"}} component={Paper}>
+      <TableContainer  component={Paper}>
         <Table className={classes.table} aria-label="simple table">
           <TableHead >
             <TableRow >
-              <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}}>Name</TableCell>
-              <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">Balance</TableCell>
-              <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">Average Price</TableCell>
-              <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">Buy Value</TableCell>
-              <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">Est. Value</TableCell>
-              <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">Profit/Loss(%)</TableCell>
-              <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">Profit/Loss</TableCell>
-              <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">Available Balance</TableCell>
-              <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right"><StarRateIcon></StarRateIcon></TableCell>
+              <TableCell className={classes.headCell} >Name</TableCell>
+              <TableCell  className={classes.headCell} align="right">Balance</TableCell>
+              <TableCell className={classes.headCell} align="right">Average Price</TableCell>
+              <TableCell  className={classes.headCell} align="right">Buy Value</TableCell>
+              <TableCell  className={classes.headCell} align="right">Est. Value</TableCell>
+              <TableCell  className={classes.headCell}align="right">Profit/Loss(%)</TableCell>
+              <TableCell  className={classes.headCell}align="right">Profit/Loss</TableCell>
+              <TableCell  className={classes.headCell} align="right">Available Balance</TableCell>
+              <TableCell  className={classes.headCell} align="right"><StarRateIcon></StarRateIcon></TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -56,14 +59,14 @@ const useStyles = makeStyles({
                   {row.name}
                 </TableCell>
                 {/* <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">{row.name}</TableCell> */}
-                <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">{row.Balance}</TableCell>
-                <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">{row.Average}</TableCell>
-                <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">{row.Buy}</TableCell>
-                <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">{row.Est}</TableCell>
-                <TableCell style={{color:"#ADADAD",borderColor:"#171b20",color:"#f36876"}} align="right">{row.ProfitPer}</TableCell>
-                <TableCell style={{color:"#ADADAD",borderColor:"#171b20",color:"#f36876"}} align="right">{row.Profit}</TableCell>
-                <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">{row.Available}</TableCell>
-                <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right"><StarRateIcon></StarRateIcon></TableCell>
+                <TableCell className={classes.headCell} align="right">{row.Balance}</TableCell>
+                <TableCell className={classes.headCell} align="right">{row.Average}</TableCell>
+                <TableCell className={classes.headCell} align="right">{row.Buy}</TableCell>
+                <TableCell className={classes.headCell} align="right">{row.Est}</TableCell>
+                <TableCell className={classes.headCell} style={{color:"#f36876"}} align="right">{row.ProfitPer}</TableCell>
+                <TableCell className={classes.headCell} style={{color:"#f36876"}} align="right">{row.Profit}</TableCell>
+                <TableCell className={classes.headCell} align="right">{row.Available}</TableCell>
+                <TableCell className={classes.headCell} align="right"><StarRateIcon></StarRateIcon></TableCell>
               </TableRow>
             ))}
           </TableBody>

@@ -394,23 +394,23 @@ const Graph = (props) => {
     <div className="chartContainer">
       <br></br>
       <div>
-      <div style={{display:"flex",flexDirection:"row",width:"100%",flexWrap:"wrap"}}><DropDown  options={dropOptions1}></DropDown>
+      <div className="chartDetailContainer" ><DropDown  options={dropOptions1}></DropDown>
       <DropDown options={dropOptions2}></DropDown>
       <DropDown options={dropOptions3}></DropDown></div>
       <br></br>
       <div style={{ textAlign: "left", width: "100%", color: "white" }}>
         <label >
           BTC/USDT
-          <span style={{ color: "white",fontWeight:"bold" }}>&nbsp;&nbsp;&nbsp;Date </span>
-          <span style={{ color: "#0f50b8",fontWeight:"bold" }}>2020-08-17 09:00</span>
-          <span style={{ color: "white",fontWeight:"bold" }}>   &nbsp;&nbsp;&nbsp; O </span>
-          <span style={{ color: "#0f50b8",fontWeight:"bold" }}>11,730</span>
-          <span style={{ color: "white",fontWeight:"bold" }}>   &nbsp;&nbsp;&nbsp; H </span>
-          <span style={{ color: "#0f50b8",fontWeight:"bold" }}>11,910</span>
-          <span style={{ color: "white",fontWeight:"bold" }}>  &nbsp;&nbsp;&nbsp;  L </span>
-          <span style={{ color: "#0f50b8",fontWeight:"bold" }}>11,620</span>
-          <span style={{ color: "white",fontWeight:"bold" }}>  &nbsp;&nbsp;&nbsp;  C </span>
-          <span style={{ color: "#0f50b8",fontWeight:"bold" }}>11,790</span>
+          <span className="LabelStyle" >&nbsp;&nbsp;&nbsp;Date </span>
+          <span className="labelValueStyle">2020-08-17 09:00</span>
+          <span className="LabelStyle">   &nbsp;&nbsp;&nbsp; O </span>
+          <span className="labelValueStyle">11,730</span>
+          <span className="LabelStyle">   &nbsp;&nbsp;&nbsp; H </span>
+          <span className="labelValueStyle">11,910</span>
+          <span className="LabelStyle">  &nbsp;&nbsp;&nbsp;  L </span>
+          <span className="labelValueStyle">11,620</span>
+          <span className="LabelStyle">  &nbsp;&nbsp;&nbsp;  C </span>
+          <span className="labelValueStyle">11,790</span>
         </label>
       </div>
       </div>

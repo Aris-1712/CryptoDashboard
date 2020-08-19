@@ -13,9 +13,12 @@ const useStyles = makeStyles({
     //   minWidth: 650,
       backgroundColor:"#171b20",
       color:'#ADADAD',
-      borderColor:'yellow',
+      
       overflowX:"hidden"
     },
+    tablcellHeadStyle:{
+      color:"#ADADAD",borderColor:"#171b20"
+    }
   });
   
   function createData( pair, price, change, icon ) {
@@ -39,10 +42,10 @@ const useStyles = makeStyles({
         <Table className={classes.table} aria-label="simple table">
           <TableHead >
             <TableRow >
-              <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}}>Pair</TableCell>
-              <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">Price</TableCell>
-              <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">Change</TableCell>
-              <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right"></TableCell>
+              <TableCell className={classes.tablcellHeadStyle} >Pair</TableCell>
+              <TableCell className={classes.tablcellHeadStyle}  align="right">Price</TableCell>
+              <TableCell className={classes.tablcellHeadStyle}  align="right">Change</TableCell>
+              <TableCell className={classes.tablcellHeadStyle} align="right"></TableCell>
               {/* <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">Est. Value</TableCell>
               <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">Profit/Loss(%)</TableCell>
               <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">Profit/Loss</TableCell>
@@ -57,9 +60,9 @@ const useStyles = makeStyles({
                   {row.pair}
                 </TableCell>
                 {/* <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">{row.name}</TableCell> */}
-                <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">{row.price}</TableCell>
-                <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">{row.change}</TableCell>
-                <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">{row.icon}</TableCell>
+                <TableCell  className={classes.tablcellHeadStyle} align="right">{row.price}</TableCell>
+                <TableCell  className={classes.tablcellHeadStyle} align="right">{row.change}</TableCell>
+                <TableCell  className={classes.tablcellHeadStyle} align="right">{row.icon}</TableCell>
                 {/* <TableCell style={{color:"#ADADAD",borderColor:"#171b20"}} align="right">{row.Est}</TableCell>
                 <TableCell style={{color:"#ADADAD",borderColor:"#171b20",color:"#f36876"}} align="right">{row.ProfitPer}</TableCell>
                 <TableCell style={{color:"#ADADAD",borderColor:"#171b20",color:"#f36876"}} align="right">{row.Profit}</TableCell>

@@ -1,19 +1,20 @@
 import React from 'react'
-import BitcoinImg from '../../Images/Bitcoin.png' 
+import BitcoinImg from '../../Images/Bitcoin.png'
+import './Bitcoin.css' 
 const Bitcoin=(props)=>{
 return(
     <div>
     <h4 style={{color:"white"}}>Coin Information</h4>
-     <div style={{display:"flex",alignItems:"center"}}><img src={BitcoinImg} width={50} ></img>
-     <div style={{display:"flex",flexDirection:"column",marginLeft:20}}>
+     <div className="imgContainer"><img src={BitcoinImg} width={50} ></img>
+     <div className="imgLabel">
          <label style={{color:"#ADADAD"}}>Bitcoin</label>
          <label style={{color:"#ADADAD"}}>Symbol BTC</label>
      </div> 
     
      </div>
      <br></br>
-    <div style={{display:"flex",flexDirection:"row",color:"#ADADAD"}}>
-        <div style={{width:"50%"}}>
+    <div className="labelContainerBitCoin" >
+        <div  className="labelStyleBitCoin">
             <label>First Announced</label>
         </div>
         <div >
@@ -22,8 +23,8 @@ return(
         
     </div>
     <br></br>
-    <div style={{display:"flex",flexDirection:"row",color:"#ADADAD"}}>
-        <div style={{width:"50%"}}>
+    <div className="labelContainerBitCoin" >
+        <div  className="labelStyleBitCoin">
             <label>Market Cap</label>
         </div>
         <div >
@@ -32,8 +33,8 @@ return(
         
     </div>
     <br></br>
-    <div style={{display:"flex",flexDirection:"row",color:"#ADADAD"}}>
-        <div style={{width:"50%"}}>
+    <div className="labelContainerBitCoin">
+        <div  className="labelStyleBitCoin">
             <label>Block Time</label>
         </div>
         <div >
@@ -42,8 +43,8 @@ return(
         
     </div>
     <br></br>
-    <div style={{display:"flex",flexDirection:"row",color:"#ADADAD"}}>
-        <div style={{width:"50%"}}>
+    <div className="labelContainerBitCoin">
+        <div  className="labelStyleBitCoin">
             <label>Max Supply</label>
         </div>
         <div >
@@ -52,8 +53,8 @@ return(
         
     </div>
     <br></br>
-    <div style={{display:"flex",flexDirection:"row",color:"#ADADAD"}}>
-        <div style={{width:"50%"}}>
+    <div className="labelContainerBitCoin">
+        <div className="labelStyleBitCoin" >
             <label>Proof Type</label>
         </div>
         <div >
