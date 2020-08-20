@@ -25,17 +25,12 @@ const BuySell = (props) => (
           <label>Price</label>
           <div>
      
-            <button style={{border:"solid 1px #ADADAD",backgroundColor:"black",color:'#ADADAD',padding:5,borderRadius:2,marginRight:10 }}>STOP</button>
-            <ButtonGroup
-              variant="contained"
-              color="primary"
-              aria-label="contained primary button group"
-            >
-              
-               
-              <Button>LIMIT</Button>
-              <Button>MARKET</Button>
-            </ButtonGroup>
+            <button className="StopButton" >Stop</button>
+           
+            <div className="ButtonGroup">
+              <button className="BtnDark" >Limit</button>
+              <button className="BtnLight" >Market</button>
+            </div>
           </div>
         </div>
         <br></br>

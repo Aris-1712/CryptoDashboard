@@ -1,10 +1,13 @@
 import React from 'react'
 import BitcoinImg from '../../Images/Bitcoin.png'
+import LaunchIcon from "@material-ui/icons/Launch";
 import './Bitcoin.css' 
 const Bitcoin=(props)=>{
 return(
     <div>
-    <h4 style={{color:"white"}}>Coin Information</h4>
+        <hr style={{borderColor:"#ADADAD"}}></hr>
+    <div className="BitcoinHeaderContainer"><h4 style={{color:"white"}}>Coin Information</h4>
+    <LaunchIcon style={{color:"#0080fe"}}></LaunchIcon></div>
      <div className="imgContainer"><img src={BitcoinImg} width={50} ></img>
      <div className="imgLabel">
          <label style={{color:"#ADADAD"}}>Bitcoin</label>

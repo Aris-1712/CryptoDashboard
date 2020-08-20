@@ -11,6 +11,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import AddIcon from '@material-ui/icons/Add';
 import RemoveIcon from '@material-ui/icons/Remove';
 import RadioButtonCheckedIcon from '@material-ui/icons/RadioButtonChecked';
+import CallMadeIcon from '@material-ui/icons/CallMade';
 import './OrderBook.css'
 const OrderBook = (props) => {
   const useStyles = makeStyles({
@@ -55,7 +56,9 @@ const OrderBook = (props) => {
   return (
 
       <div className="OrderBookContainer" >
-          <h4 style={{color:"white"}}>Order Book</h4>
+          <div className="OrderBookHeaderContainer" ><h4 style={{color:"white"}}>Order Book</h4>
+          <CallMadeIcon style={{color:"white"}}></CallMadeIcon>
+          </div>
     <TableContainer className={classes.root} component={Paper}>
       <Table className={classes.table} aria-label="simple table">
         <TableHead >

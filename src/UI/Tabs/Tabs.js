@@ -18,7 +18,7 @@ const TabsReact = (props) => {
         <div
           style={{ display: "inline-block", float: "right", marginRight: 30,marginTop:5 }}
         >
-          <LaunchIcon></LaunchIcon>
+          <LaunchIcon style={{color:"#0080fe"}}></LaunchIcon>
         </div>
       </TabList>
 

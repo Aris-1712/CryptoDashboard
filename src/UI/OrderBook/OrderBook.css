@@ -14,3 +14,9 @@ margin-right: 10px;
     color:#f36876;
     font-weight: bold;
 }
+
+.OrderBookHeaderContainer{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
